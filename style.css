@@ -1,0 +1,648 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/****************************** MY CODE ******************************/
+
+/**** BODY ****/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("images/bg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/**** HEADER-LEFT CONTAINER ****/
+section.header-left{
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+/**** BRAND NAME ****/
+.brand-container{
+  color: white;
+  margin-top: 0;
+}
+@font-face{
+  src: url("fonts/Montserrat Font/Montserrat-Light.ttf");
+  font-family: monlight;
+}
+.brand-container h2.brand-name .a-h2-link{
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white;
+  margin-top: 20px;
+  font-family: monlight;
+}
+.brand-container h2 span.firstname{
+  opacity: 0.6;
+  font-weight: lighter;
+}
+.brand-container p{
+  text-align: center;
+  font-family: monlight;
+  font-size: 13px;
+  line-height: 35px;
+}
+/**** LINKS ****/
+.links-container ul{
+  width: fit-content;
+  margin: 5px auto 10px auto;
+  display: block;
+  font-family: monlight;
+  font-size: 13px;
+}
+.links-container ul li{
+  list-style-type: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-align: center;
+}
+.links-container ul li a{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.links-container ul li a:hover{
+  opacity: 0.5;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.links-container .a-cv{
+  display: none;
+}
+.sm-container p.sm{
+  display: none;
+}
+.cv-container{
+  display: none;
+}
+@media only screen and (min-width: 1000px){
+/**** HEADER-LEFT CONTAINER ****/
+section.header-left{
+  /*
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  */
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/**** WRAPPER ****/
+section.header-left .header-wrapper{
+  overflow: hidden;
+  max-width: 1920px;
+  background: rgba(0, 0, 0, 0.0);
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/**** BRAND NAME ****/
+.brand-container h2.brand-name .a-h2-link{
+  border: none;
+  margin-top: 20px;
+  border-right: 2px solid white;
+  padding: 20px 70px 20px 30px;
+  display: block;
+}
+/**** LINKS ****/
+.links-container ul{
+  width: fit-content;
+  margin-top: 0;
+  margin-right: 105px;
+}
+.links-container ul li{
+  display: inline-block;
+  font-size: 15px;
+  float: left;
+}
+.links-container ul li a{
+  display: block;
+  padding: 35px 20px 35px 20px;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.links-container ul li a:hover{
+  opacity: 0.4;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+/***
+.links-container .a-cv{
+  display: block;
+  text-align: center;
+  border: 1px solid white;
+  margin-top: 50px;
+****/
+  /*DEFAULT
+  transition: all.5s;
+}
+.links-container .a-cv:hover{
+  background-color: #3d3d3d;
+  /*DEFAULT
+  transition: all.5s;
+}
+/**** Social Media Icons
+  float: left;
+  width: 100%;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 50px;
+}
+/**** Copyright Container
+.copyright-container p{
+  color: white;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  font-family: monlight;
+  font-size: 12px;
+  opacity: 0.7;
+}****/
+}
+/**** Profile Container ****/
+@font-face{
+  src: url("fonts/Cormorant Garamond Font/CormorantGaramond-Regular.ttf");
+  font-family: corgar;
+}
+.profile-container{
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.profile-container .image-desc{
+  width: fit-content;
+  margin: 0 auto 0px;
+  display: block;
+  text-align: center;
+}
+.profile-container img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #ebebeb;
+}
+.profile-container .image-desc h1{
+  margin-top: 10px;
+  color: white;
+  font-family: calibri light;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.profile-container .image-desc p{
+  font-family: calibri light;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #94baff;
+}
+.image-desc .cv-p a{
+ text-align: center;
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding: 15px 35px 15px 35px;
+ text-decoration: underline;
+}
+.p-information{
+  display: none;
+}
+/**** MAIN CONTENT ****/
+main{
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+.wrapper{
+  background-color: white;
+  overflow: hidden;
+}
+
+main .section-container h2{
+  text-transform: uppercase;
+  font-family: calibri;
+  padding: 10px;
+  height: auto;
+  background-color: #d6d6d6;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+main .section-container h3{
+  text-align: left;
+  font-size: 19px;
+  font-weight: bolder;
+}
+main .section-container .section-p{
+  font-family: calibri;
+  padding: 0px 20px 10px 20px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+main .section-container .section-p ul{
+  padding-left: 75px;
+  padding-right: 10px;
+}
+main .section-container .section-p ul span.clickhyperlink{
+  font-size: 17px;
+}
+main .section-container .section-p .military-p{
+  padding-left: 55px;
+}
+main .section-container .section-p .photo-gallery-container{
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0 auto;
+}
+main .section-container .section-p .photo-gallery-container h3.h3-gallery{
+  text-align: center;
+}
+main .section-container .section-p .photo-gallery-container h3.h3-gallery a{
+  display: block;
+  margin-top: 10px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.certificate-span{
+  color: rgba(0,0,87,0.9);
+  font-size: 21px;
+}
+.span-education{
+  text-decoration: underline;
+}
+main .section-container .section-p .photo-gallery-container h3.h3-gallery a:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  /*DEFAULT*/
+  transition: all.5s;
+}
+main .section-container .section-p .box{
+  margin: 40px auto 30px;
+  height: 200px;
+  width: 300px;
+  box-shadow: 0px 0px 25px black; /* DEKSIA KATW THOLOURA XRWMA */
+  border-radius: 5px;
+}
+main .section-container .section-p .box p{
+  text-align: center;
+  padding-top: 45px;
+  font-size: 25px;
+}
+main .section-container .section-p .box .glyphicon{
+  margin-top: 5px;
+}
+main .section-container .section-p .box a{
+  text-align: center;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+main .section-container .section-p .box a:hover{
+  color: red;
+}
+footer{
+  height: 200px;
+  width: 100%;
+  background-color: rgba(41, 41, 41, 0.9);
+  overflow: hidden;
+}
+footer p{
+  margin-top: 60px;
+  text-align: center;
+}
+footer .copyright-footer{
+  color: white;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;
+  font-family: monlight;
+  font-size: 12px;
+}
+/**** SOCIAL MEDIA ICONS ****/
+a.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  /*DEFAULT*/
+  transition: all.5s;
+}
+.fa:hover {
+    transform: translateY(-3px);
+    color: white;
+    opacity: 0.7;
+    /*DEFAULT*/
+    transition: all.5s;
+}
+.fa:visited{
+  color: white;
+}
+.fa-linkedin {
+  color: white;
+}
+.fa-github{
+  color: white;
+}
+
+
+@media only screen and (min-width: 1000px){
+  body{
+    background: none;
+  }
+  main{
+    margin-top: 0;
+    width: 100%;
+  }
+  section.header-left{
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .desktop-bg-image{
+    background-image: url("images/bg3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*box-shadow: 10px 20px 55px black;  DEKSIA KATW THOLOURA XRWMA */
+  }
+  .desktop-transparent{
+    background: rgba(0, 0, 0, 0.25);
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .profile-container{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    display: block;
+    margin-top: 400px;
+    padding:0;
+    width: 1100px;
+    height: auto;
+    box-shadow: 10px 10px 25px black; /* DEKSIA KATW THOLOURA XRWMA */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .profile-container .image-desc{
+    width: fit-content;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    border: none;
+  }
+  .profile-container .image-desc h1{
+    color: black;
+    display: none;
+  }
+  .profile-container .image-desc p{
+    display: none;
+  }
+  .p-information{
+    display: block;
+  }
+  .profile-container .p-information{
+    width: 700px;
+    height: 470px;
+    font-family: monlight;
+  }
+  .profile-container .p-information span.firstlastname-profile{
+    font-weight: bolder;
+  }
+  .profile-container .p-information p.profile-paragraph{
+    margin-bottom: 10px;
+  }
+  .profile-container .profile-brand-name{
+    width: 90%;
+    height: auto;
+    margin-top: 87px;
+    border-bottom: 1px solid black;
+    line-height: 35px;
+  }
+  .profile-container .profile-brand-name h1{
+    font-size: 35px;
+    color: black;
+  }
+  .profile-container .profile-brand-name p{
+    font-size: 25px;
+    color: black;
+  }
+  .profile-container .list-info{
+    width: 100%;
+    margin-top: 15px;
+    height: auto;
+    line-height: 52px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-info ul li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .profile-container .list-info ul.second-list li{
+    margin-right: 150px;
+    font-size: 20px;
+    opacity: 0.7;
+    text-transform: inherit;
+  }
+  .profile-container .sm-container{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm-container p.sm{
+    display: block;
+  }
+  .sm-container p.sm a{
+    padding: 0px 20px 0px 20px;
+  }
+
+  .cv-container{
+    width: fit-content;
+    margin: 280px auto 65px auto;
+    display: block;
+    text-align: center;
+  }
+  .cv-container h2.brand-name a.cv-link{
+    padding: 25px 100px 25px 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: monlight;
+    font-size: 20px;
+    font-weight: bolder;
+    /*DEFAULT*/
+    transition: all.5s;
+  }
+  .cv-container h2.brand-name a.cv-link:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    /*DEFAULT*/
+    transition: all.5s;
+  }
+  .wrapper{
+    max-width: 1100px;
+    height: auto;
+    margin: 0px auto 0px auto;
+  }
+  footer{
+    height: 70px;
+  }
+  footer p.sm{
+    display: none;
+  }
+  footer .copyright-footer{
+    font-family: monlight;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
