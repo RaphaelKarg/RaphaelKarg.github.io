@@ -468,13 +468,26 @@ a.fa {
 .fa:visited{
   color: white;
 }
+/* LINKED-IN */
+.fa-linkedin:hover{
+  color: white;
+}
+.fa-linkedin:visited{
+  color: white;
+}
 .fa-linkedin {
+  color: white;
+}
+/* GITHUB */
+.fa-github:visited{
+  color: white;
+}
+.fa-github:hover{
   color: white;
 }
 .fa-github{
   color: white;
 }
-
 
 @media only screen and (min-width: 1000px){
   body{
