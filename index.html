@@ -1,218 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Raphael Kargos">
-    <meta name="description" content="This Website its my CV and containing information about me.">
-    <meta name="keywords" content="Website, CV, Network Engineer, Network Administrator, Cyber Defense Officer, Junior Web Developer, Web Designer, Computer Science">
-    <title>My CV</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <script src="code.js"></script>
-    <!-- DESKTOP BACKGROUND IMAGE -->
-    <div class="desktop-bg-image">
-      <!-- BACKGROUND TRANSPARENT -->
-      <div class="desktop-transparent">
-        <!-- Header Area -->
-        <section class="header-left">
-          <div class="header-wrapper">
-            <div class="brand-container">
-              <h2 class="brand-name"><a href="https://raphaelkarg.github.io/" class="a-h2-link"><span class="firstname">Kargos</span> Raphael</a></h2>
-            </div>
-            <div class="links-container">
-              <ul>
-                <li><a href="#aboutme">About me</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#Hobby">Hobby</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- Profile Container -->
-        <div class="profile-container">
-          <div class="image-desc">
-            <a href="images/profile.jpg" target="_blank">
-              <img src="images/profile.jpg" alt="Raphael Kargos" title="Click here for full resolution!">
-            </a>
-            <h1>Raphael Kargos</h1>
-            <p>Computer Network Engineer</p>
-            <p class="cv-p"><a href="cv/RaphaelKargos_CV.pdf" title="Click my CV!" target="_blank">CV</a></p>
-          </div>
-          <div class="p-information">
-            <div class="profile-brand-name">
-              <h1>Hi, I'm <span class="firstlastname-profile">Raphael Kargos</span></h1>
-              <p class="profile-paragraph">Computer Network Engineer</p>
-            </div>
-            <div class="list-info">
-              <ul class="first-list">
-                <li>Nationality</li>
-                <li>Age</li>
-                <li>E-mail</li>
-                <li>Phone</li>
-              </ul>
-              <ul class="second-list">
-                <li>Hellenic</li>
-                <li id="Age"></li>
-                <script type="text/javascript">
-                  var dob = '19990501';
-                  var year = Number(dob.substr(0, 4));
-                  var month = Number(dob.substr(4, 2)) - 1;
-                  var day = Number(dob.substr(6, 2));
-                  var today = new Date();
-                  var age = today.getFullYear() - year;
-                  if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
-                    age--;
-                  }
-                  document.getElementById('Age').innerHTML = age;
-                </script>
-                <li>karg.raphael@gmail.com</li>
-                <li>694-246-1719</li>
-              </ul>
-            </div>
-          </div>
-          <div class="sm-container">
-            <p class="sm">
-              <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba" target="_blank" class="fa fa-linkedin"></a>
-              <a href="https://github.com/RaphaelKarg" target="_blank" class="fa fa-github"></a>
-            </p>
-          </div>
+<html lang="en">
+    <head>
+        <!-- Meta tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hello! My name is Raphael Kargos, i'm Network Engineer and this is my personal Portfolio website! I would be very happy if you check me out!">
+        <meta name="keywords" content="Site, Website, Portfolio, Raphael Kargos, Network Engineer, HTML, CSS JavaScript, PHP, MySQL">
+        <meta name="author" content="Raphael Kargos">
+        <!-- Title-->
+        <title>Raphael Kargos</title> 
+        <link rel="icon" type="img/png" href="images/work.png">
+        <!-- CSS Link-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- JavaScript Link -->
+        <script defer src="js/script.js"></script>
+        <!-- For icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Source Sans Pro Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+        <!-- Quicksan Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Root -->
+        <div class="root-container">
+            <!-- Header Container -->
+            <header>
+                <div class="first-group">
+                    <!-- Brand Name -->
+                    <a href="index.html" class="brand-name"><span class="colorBrand">Kargos</span> Raphael</a>
+                    <!-- Menu Container -->
+                    <div class="menu-container">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#cases">Cases</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Dropdown Button -->
+                <div class="dropdown-button" onclick="active();">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <!-- Contact Button-->
+                <!--<a href="#" class="contact-button">Contact</a>-->
+            </header>
+            <!-- Main Container -->
+            <main>
+                <!-- Home Section -->
+                <section class="home">
+                    <div class="first-welcome"> <!-- First subcontainer -->
+                        <img class="user-image" src="images/man.png" alt="Author User Icon profile">
+                        <h1 class="user-name-first">Raphael Kargos</h1>
+                        <h2 class="user-specialty-first">I'm a <span class="colorSpan">Junior Network Engineer</span></h2>
+                        <div class="sm-links-first">
+                            <a href="https://github.com/RaphaelKarg" class="fa fa-github" target="_blank"></a>
+                            <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba" class="fa fa-linkedin" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="second-welcome"><!-- Second Subcontainer -->
+                        <h1 class="user-name-second">Raphael Kargos</h1>
+                        <h2 class="user-specialty-second">I'm a Junior<br><span class="colorSpan">Network Engineer</span></h2>
+                        <div class="row-second">
+                            <div class="sm-links-second">
+                                <a href="https://github.com/RaphaelKarg" class="fa fa-github" target="_blank"></a>
+                                <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba" class="fa fa-linkedin" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- About Section -->
+                <section class="about">
+                    <!-- Basic Information -->
+                    <h2 class="titles" id="about">About <span class="colorSpan">Me</span></h2>
+                    <h3 class="subtitles">Hello! I'm Raphael Kargos</h3>
+                    <p class="info-about">
+                        I am a transitional final student at the Department of Informatics at the University of Western Macedonia in Kastoria, Greece, 
+                        where I am majoring in computer networks. 
+                        My focus is on the architecture and structure of networks, as well as network control and security.
+                        To gain practical experience, I use tools such as WireShark and Cisco Packet Tracer to analyze data and create computer networks. 
+                        Additionally, I am working to learn about the world of cybersecurity and all its various aspects, as I believe it is an essential 
+                        component of modern computer networks.
+                        In my free time, I enjoy creating websites using programming languages such as HTML, CSS (mainly), and also have some knowledge of JavaScript, PHP, and MySQL.<br>
+                        Below, you will see my Resume for more information and my work!
+                    </p>
+                    <!-- Button links and Social Media-->
+                    <div class="links">
+                        <a href="files/Raphael_Kargos_Resume.pdf" class="resume-link" target="_blank">Resume</a>
+                        <a href="files/Thesis.pdf" class="thesis-link" target="_blank">Thesis</a>
+                    </div>
+                </section>
+                <!-- Skills Section -->
+                <section class="skills">
+                    <h2 class="titles" id="skills">My <span class="colorSpan">Skills</span></h2>
+                    <h3 class="subtitles">My experience</h3>
+                    <!-- My all skills container -->
+                    <div class="my-skills">
+                        <!-- Computer Networking Skill-->
+                        <div class="skill-container">
+                            <!-- Image -->
+                            <img src="images/networking_skill.png" alt="Networking Skills" class="skill-img">
+                            <!-- Skill Information-->
+                            <div class="skill-info">
+                                <h4 class="skill-title">Computer Networking</h4>
+                                <p class="skill-paragraph">
+                                    My experience in computer networks is the fundamentals of network structure and architecture, subnetting of a computer network, 
+                                    and my knowledge of the TCP/IP protocol suite. The softwares I use widely are Cisco Packet Tracer and the packet capture software, 
+                                    Wireshark.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Web Programming Skill-->
+                        <div class="skill-container">
+                            <!-- Image -->
+                            <img src="images/web_programming_skill.png" alt="Web Skills" class="skill-img">
+                            <!-- Skill Information-->
+                            <div class="skill-info">
+                                <h4 class="skill-title">Coding</h4>
+                                <p class="skill-paragraph">
+                                    In my free time, I have as a occupation, the creation of websites. 
+                                    I have very good knowledge at present in HTML and CSS and less in JS, PHP and MySQL.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Cases Section -->
+                <section class="cases">
+                    <h2 class="titles" id="cases">My <span class="colorSpan">Cases</span></h2>
+                    <h3 class="subtitles">Check out my cases</h3>
+                    <!-- My all cases container -->
+                    <div class="my-cases">
+                        <a href="#" class="case-link">Networking Projects</a>
+                        <a href="#" class="case-link">Web Projects</a>
+                        <a href="#" class="case-link">Work</a>
+                        <a href="#" class="case-link">Certifications</a>
+                        <a href="#" class="case-link">Photo Gallery</a>
+                    </div>
+                </section>
+                <!-- Cases Section -->
+                <section class="contact">
+                    <h2 class="titles" id="contact">Contact <span class="colorSpan">Me</span></h2>
+                    <h3 class="subtitles">Let's chat!</h3>
+                    <!-- Email Image with link container -->
+                    <div class="mail-container">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:karg.raphael@gmail.com" class="mail-link">karg.raphael@gmail.com</a>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p class="footer-p">Copyright &copy; 2023 Raphael Kargos</p>
+            </footer>
         </div>
-      </div>
-    </div>
-    <div class="cv-container">
-      <h2 class="brand-name"><a href="cv/RaphaelKargos_CV.pdf" class="cv-link" target="_blank">CV</a></h2>
-    </div>
-    <!-- Main Content -->
-    <main>
-      <div class="wrapper">
-        <!-- About Container -->
-        <section class="section-container">
-          <h2 id="aboutme">About me</h2>
-          <div class="section-p">
-            <p>
-              Hi, my name is <b>Kargos Raphael</b>, Computer Network Engineer and I am a undergraduate student in the Department of Informatics of the University of Western Macedonia based in the city of Kastoria, Greece. <br>
-              I mainly deal with the implementation and architecture of computer networks and I use the virtual networking tool a lot for practice, Cisco Packet Tracer and Wireshark for analyzing data moving on a computer network. Also a part that I am very interested in is Cyber Defense - Cybersecurity in computer networks and computer systems, something that I am currently working hard to understand all its aspects. Finally i have as a hobby to construct websites. I am using the programming languages HTML, CSS, PHP, MySQL and little bit Javascript.
-            </p>
-          </div>
-        </section>
-        <!-- Certificates Container -->
-        <section class="section-container">
-          <h2 id="certificates">Certificates</h2>
-          <div class="section-p">
-            <h3>19 December 2020 &nbsp;&nbsp;&nbsp;&nbsp;<span class="certificate-span">Cisco Cybersecurity Essential Certificate</span></h3>
-            <p>Cisco Networking Academy</p>
-            <span class="clickhyperlink">Click <a href="https://drive.google.com/file/d/1cB0VsNNUH8aAgkKWsrtDCdrdOJ2SoxVw/view?usp=sharing" target="_blank">here</a>.</span>
-            <br>
-            <br>
-            <h3>
-              1-7 April 2019&nbsp;&nbsp;&nbsp;&nbsp;<span class="certificate-span">Hellenic Mathematical Society <br />
-              (Branch of Central Macedonia in cooperation with the branches
-              Kastoria and Pieria)</span>
-            </h3>
-            <p>
-              11th International Week Dedicated to Maths <br />
-              Mathematics: Themis Zois
-            </p>
-            <span class="clickhyperlink">Click <a href="#" target="_blank">here</a>.</span>
-            <br>
-            <br>
-            <h3>2015 – 2016&nbsp;&nbsp;&nbsp;&nbsp;<span class="certificate-span">Google Grow Greek Tourism Online</span></h3>
-            <p>“How to Design & Build Website”</p>
-            <span class="clickhyperlink">Click <a href="https://drive.google.com/file/d/17hKBRxY5Q6xofbCc1cWfHXNUq4iSLHF9/view?usp=sharing" target="_blank">here</a>.</span>
-            <br>
-            <br>
-            <h3>2015 – 2016&nbsp;&nbsp;&nbsp;&nbsp;<span class="certificate-span">ERASMUS+ PROGRAM</span></h3>
-            <p>
-              F.I.T.S From new Ideals to Praxis in School<br />
-              REFORM OF PEDAGOGICAL PRACTICES BY TURNING INTO<br />
-              ENTREPRENEURSHIP AND INNOVATION
-            </p>
-            <span class="clickhyperlink">Click <a href="#" target="_blank">here</a>.</span>
-          </div>
-        </section>
-        <!-- Projects Container -->
-        <section class="section-container">
-          <h2 id="projects">Projects</h2>
-          <div class="section-p">
-            <center>
-              <h1>UNDER CONSTRUCTION</h1>
-            </center>
-          </div>
-        </section>
-        <!-- Skills  Container -->
-        <section class="section-container">
-          <h2 id="skills">Skills</h2>
-          <div class="section-p">
-            <ul>
-              <li>Network Architect</li>
-              <li>Information Security Analyst</li>
-              <li>Multitasking, communication, and computer skills</li>
-              <li>Troubleshooting Methods</li>
-              <li>Good knowledge of the tool Cisco Packet Tracer</li>
-              <li>Consistency and flexibility.</li>
-              <li>Computer programmer</li>
-              <li>Junior Front-end Web Developer</li>
-            </ul>
-          </div>
-        </section>
-        <!-- Education  Container -->
-        <section class="section-container">
-          <h2 id="education">Education</h2>
-          <div class="section-p">
-            <h3>2017-2022&nbsp;&nbsp;&nbsp;&nbsp;School of Sciences, Department of Informatics
-              and Computer Technology,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              University of Western Macedonia in Kastoria, Greece.
-            </h3>
-            <ul>
-              <li>5rd year Undergraduate Student. <br /><span class="span-education">Specialty:</span> Network Engineer</li>
-            </ul>
-            <br />
-            <h3>2014-2017&nbsp;&nbsp;&nbsp;&nbsp;2nd Daily Vocational High School of Alexandroupolis
-            </h3>
-            <ul>
-              <li><span class="span-education">Specialty:</span> Support for Computer Systems, Applications and Networks (Economics - IT Sector)</li>
-            </ul>
-            <br />
-            <h3>2011-2014&nbsp;&nbsp;&nbsp;&nbsp;2nd High School of Alexandroupolis
-            </h3>
-          </div>
-        </section>
-        <!-- Hobby Container -->
-        <section class="section-container">
-          <h2 id="Hobby">Hobby</h2>
-          <div class="section-p">
-            <div class="photo-gallery-container">
-              <h3 class="h3-gallery">See my photo gallery <br/><a href="photogallery.html">here!</a></h3>
-            </div>
-          </div>
-        </section>
-        <!-- Contact  Container -->
-        <section class="section-container">
-          <h2 id="contact">Contact</h2>
-          <div class="section-p">
-            <div class="box">
-              <p>Contact me! <br /><i class="glyphicon glyphicon-envelope"></i> </p>
-              <a href="mailto:karg.raphael@gmail.com">karg.raphael@gmail.com</a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p class="sm">
-        <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba" target="_blank" class="fa fa-linkedin"></a>
-        <a href="https://github.com/RaphaelKarg" class="fa fa-github"></a>
-      </p>
-      <p class="copyright-footer">Copyright &#9400; 2021 Raphael Kargos</p>
-    </footer>
-  </body>
+    </body>
 </html>
