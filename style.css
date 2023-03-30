@@ -617,8 +617,9 @@ main > .home {
     width: 100%;
     height: calc(100vh - 56px); /*100vh(.first-welcome) - 66px(56px: header)*/
 }
-.first-welcome > .user-image {
-    max-width: 60%;
+.first-welcome > .user-image{
+    width: 70%;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
 }
@@ -679,13 +680,12 @@ main > .home {
     }
     /*First welcome in home container*/
     .home > .first-welcome {
-        align-items: flex-start;
-        justify-content: center;
         height: calc(100vh - 162.8px);
         width: fit-content;
     }
     .first-welcome > .user-image {
-        max-width: 600px;
+        width: 90%;
+        max-width: 1000px;
         margin: 0;
     }
     /*Home Section -> first-welcome subcontainer, this informations are none displayed in PC screen*/ 
