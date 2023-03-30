@@ -618,10 +618,10 @@ main > .home {
     height: calc(100vh - 56px); /*100vh(.first-welcome) - 66px(56px: header)*/
 }
 .first-welcome > .user-image{
-    width: 70%;
-    max-width: 300px;
     display: block;
     margin: 0 auto;
+    width: 70%;
+    max-width: 300px;
 }
 .first-welcome > .user-name-first {
     text-align: center;
@@ -666,7 +666,13 @@ main > .home {
 .second-welcome > .row-second {
     display: none;
 }
-
+@media only screen and (min-width: 768px) { /*FOR PC*/
+    .first-welcome > .user-image {
+        width: 90%;
+        max-width: 450px;
+        margin: 0;
+    }
+}
 @media only screen and (min-width: 1024px) { /*FOR PC*/
     /*Main*/
     .root-container > main {
@@ -685,7 +691,7 @@ main > .home {
     }
     .first-welcome > .user-image {
         width: 90%;
-        max-width: 1000px;
+        max-width: 900px;
         margin: 0;
     }
     /*Home Section -> first-welcome subcontainer, this informations are none displayed in PC screen*/ 
