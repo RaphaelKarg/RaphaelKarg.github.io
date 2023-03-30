@@ -657,13 +657,7 @@ main > .home {
     transition: 0.5s;
 }
 /*Second welcome in home container*/
-.second-welcome > .user-name-second {
-    display: none;
-}
-.second-welcome > .user-specialty-second {
-    display: none;
-}
-.second-welcome > .row-second {
+.home > .second-welcome {
     display: none;
 }
 @media only screen and (min-width: 768px) { /*FOR PC*/
@@ -686,6 +680,7 @@ main > .home {
     }
     /*First welcome in home container*/
     .home > .first-welcome {
+        flex-direction: row;
         height: calc(100vh - 162.8px);
         width: fit-content;
     }
