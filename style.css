@@ -606,6 +606,7 @@ main > .home {
     font-family: var(--mainFont);
     font-weight: 300;
     width: 100%;
+    height: fit-content;
     color: #fff;
 }
 /*First welcome of home container*/
